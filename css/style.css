@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: custom;
+    src: url('../custom.woff');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: custom;
+    src: url('../custom.woff');
+}
+
+.main {
+    max-width: 1920px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.side_nav {
+    width: 480px;
+    height: 100%;
+}
+
+.side_nav_wrapper {
+    position: fixed;
+    width: 480px;
+}
+
+.side_nav_container {
+    background-color: rgb(223, 111, 100, 0.86);
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    left: 90px;
+}
+
+.logo_heading {
+    font-family: custom;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-weight: 500;
+    background-color: rgb(223, 111, 100, 0.86);
+}
+
+.back_stretch {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: 1s;
+    z-index: 0;
+}
+
+.back_stretch .side_nav_background {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.back_stretch.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+/* .back_stretch .side_nav_background.active {
+    opacity: 1;
+} */
+
+.nav-menu {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: rgb(223, 111, 100, 0.86);
+}
+
+.nav-item {
+    border-top: 1px solid white;
+    border-bottom: 1px solid bottom;
+}
+
+.nav-item a {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    /* letter-spacing: 1.5px; */
+    transition: 300ms;
+    font-weight: 500;
+}
+
+.nav-item:hover a {
+    background-color: white;
+    color: rgb(223, 111, 100);
+}
+
+.ribbon {
+    /* background-image: url('../images/ribbon.png'); */
+    background: url('../images/ribbon.png') bottom left repeat-x;
+    height: 8px;
+    display: block;
+    opacity: .86;
+}
+
+.main_content {
+    width: calc(100% - 480px);
+}
+
+.header {
+    padding-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.header .couple_name {
+    text-align: center;
+    font-family: custom;
+    font-size: 72px;
+    border-bottom: 4px double #c9b29b;
+    display: inline-block;
+    color: #de675f;
+    font-weight: 100;
+    padding: 20px 0px;
+}
+
+.herat_border {
+    position: absolute;
+    font-size: 28px;
+    top: 148px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.second_heart {
+    left: 51%;
+}
+
+em {
+    color: #987c61;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+}
+
+.invitation {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    color: #987c61;
+    font-weight: 600;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.main_img img {
+    width: 100%;
+}
+
+.date_section {
+    width: 100%;
+    display: flex;
+    /* padding: 20px; */
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.date,
+.time {
+    /* flex: 1; */
+    width: 50%;
+    text-align: end;
+    font-family: "Roboto Slab", serif;
+    color: #987c61;
+    padding: 48px 48px 0px 48px;
+    border-right: 1px solid #ccc;
+}
+
+.date_content {
+    width: 100%;
+}
+
+.date_section span {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.date_section .day {
+    font-weight: 700;
+}
+
+.date_section .year {
+    font-size: 192px;
+    font-family: custom;
+}
+
+.time {
+    text-align: start;
+    padding: 48px;
+}
+
+.time span {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+.time .venue {
+    font-family: custom;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.time .dinner .dinner_italic {
+    font-family: "Playfair Display", serif;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.button_form {
+    width: 100%;
+    padding: 80px 0px;
+    text-align: center;
+}
+
+
+/* 
+button {
+    background-color: #ec6d65;
+    padding: 20px 28px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    transition: 400ms;
+    border: none;
+} */
+
+.button_form .form_link {
+    background-color: #ec6d65;
+    padding: 20px 28px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+.button_form .form_link i {
+    padding-right: 10px;
+}
+
+.button_form .form_link:hover {
+    background-color: #f37f77;
+}
+
+.section_2 {
+    width: 100%;
+    background-color: #f7f7f7f7;
+    padding-top: 80px;
+}
+
+.our_story {
+    padding-top: 20px;
+    width: 100%;
+    /* background-color: #fff; */
+    text-align: center
+}
+
+.our_story_content {
+    text-align: center;
+    font-family: custom;
+    font-size: 100px;
+    border-bottom: 4px double #c9b29b;
+    display: inline-block;
+    color: #de675f;
+    font-weight: 100;
+    position: relative;
+}
+
+.our_story_heart {
+    top: 123px
+}
+
+.story_heart {
+    left: 54%;
+}
+
+.couple_story {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.bride,
+.groom {
+    width: 50%;
+    /* flex: 1 */
+    border-right: 1px solid #fff
+}
+
+.bride_img {
+    width: 100%;
+    text-align: end;
+}
+
+.groom_img {
+    text-align: start;
+}
+
+.couple_story .caption_1 {
+    padding: 50px 30px 50px 129px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(85, 82, 82);
+}
+
+.couple_story .description {
+    padding-top: 20px;
+}
+
+.couple_story .caption_1 strong {
+    text-align: end;
+    display: block;
+    padding-top: 20px;
+}
+
+.couple_story .caption_2 {
+    padding: 50px 129px 50px 30px;
+}
+
+.section_3 {
+    background-color: #fff;
+}
+
+.gallery {
+    width: 100%;
+    margin-top: 80px;
+    /* transition: 500ms ease-in-out; */
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    /* transition: 500ms; */
+}
+
+.gallery_img {
+    width: 100%;
+    position: relative;
+    /* transition: 500ms; */
+}
+
+
+/* 
+.gallery_img a {
+    transition: 500ms;
+} */
+
+.gallery_img .gallery_link1::before {
+    content: 'Engagement';
+    position: absolute;
+    inset: 0 0;
+    background-color: #ec6e65b6;
+    /* display: none; */
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Roboto Slab", serif;
+    line-height: 22;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* visibility: hidden; */
+}
+
+.gallery_img .gallery_link2::before {
+    content: 'The Dress';
+}
+
+.gallery_img .gallery_link3::before {
+    content: "The ceremony";
+}
+
+.gallery_img .gallery_link4::before {
+    content: "our reception";
+}
+
+.gallery_img .gallery_link5::before {
+    content: "cutting the cake";
+}
+
+.gallery_img .gallery_link6::before {
+    content: "bouquet";
+}
+
+.gallery_img .gallery_link7::before {
+    content: "beach kiss";
+}
+
+.gallery_img .gallery_link8::before {
+    content: "memories";
+}
+
+.gallery_img:hover ::before {
+    /* display: block; */
+    opacity: 1;
+    /* visibility: visible; */
+    transition: 500ms ease-in-out;
+}
+
+.gallery_img img {
+    width: 100%;
+}
+
+
+/* lightbox css start */
+
+.gallery_carousel {
+    display: none;
+}
+
+.carousel_grid {
+    height: 100vh;
+}
+
+.gallery_slider {
+    position: absolute;
+    /* width: 100%; */
+    object-fit: cover;
+    /* display: flex; */
+    /* height: 100vh; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.685);
+}
+
+.gallery_slider img {
+    position: absolute;
+    /* width: 100%; */
+    transition: 1s;
+    object-fit: contain;
+    opacity: 0;
+    top: 25%;
+    left: 39%;
+    /* z-index: 0; */
+}
+
+.gallery_slider img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.close_btn {
+    top: 14px!important;
+    right: -70%!important;
+}
+
+
+/* lightbox css end */
+
+.section_4 {
+    position: relative;
+    width: 100%;
+}
+
+.slider_wrapper {
+    max-width: 900px;
+    padding: 60px 0px;
+    margin-top: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 2700px;
+    justify-content: center;
+    transition: 500ms;
+}
+
+.slider_img {
+    padding: 10px;
+}
+
+.bride_img img {
+    width: 100%;
+}
+
+.slider_btn_left,
+.slider_btn_right {
+    position: absolute;
+    top: 50%;
+    color: rgb(185, 183, 183);
+    font-size: 50px;
+    font-weight: 700;
+    transition: 400ms;
+    z-index: 10;
+    background: transparent;
+    border: none;
+}
+
+.slider_btn_left {
+    left: 180px;
+}
+
+.slider_btn_right {
+    right: 180px;
+}
+
+.slider_btn_left:hover,
+.slider_btn_right:hover {
+    color: #de675f;
+}
+
+.slider_img_content {
+    font-family: "Roboto Slab", serif;
+    color: #999;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+.section_5 {
+    background-color: #fff;
+    position: relative;
+}
+
+
+/* section six Gift section css satrt */
+
+.gift_heart {
+    left: 59%;
+}
+
+.gift {
+    width: 50%;
+    margin: auto;
+    padding: 0px 10px;
+    margin-bottom: 32px;
+}
+
+.gift_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 0px 10px 10px 10px; */
+}
+
+.gift_content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.gift_content_img {
+    background-color: #fff;
+    /* background-color: #987c61; */
+    border-radius: 10px;
+    /* padding: 3%; */
+    height: 200px;
+    margin: 10px;
+}
+
+.gift_img_link {
+    padding: 70px;
+    display: block;
+    /* background-color: #de675f; */
+}
+
+.gift_img_link img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 400ms ease-in-out;
+    opacity: .5;
+    backface-visibility: hidden;
+}
+
+.gift_content_img:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.gift_para {
+    text-align: center;
+    color: #818181;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    line-height: 1.6;
+    font-family: "Roboto Slab", serif;
+}
+
+
+/* gift section css end */
+
+
+/* rsvp css start */
+
+.section_7 {
+    background-color: #fff;
+}
+
+.rsvp_heart {
+    left: 59%;
+}
+
+.rsvp_form {
+    width: 100%;
+    margin: auto;
+}
+
+.rsvp_content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form_rsvp_start {
+    width: 100%;
+}
+
+.fieldset {
+    margin: 16px 16px 48px;
+    padding: 40px;
+}
+
+legend {
+    color: #999;
+    padding: 0px 16px;
+}
+
+.form_wrapper_details {
+    width: 100%;
+}
+
+.form_input_wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.form_inputs {
+    width: 100%;
+    /* transition: 500ms ease-in; */
+}
+
+.input_details_left,
+.input_details_right {
+    /* padding-right: 40px; */
+    width: 100%;
+    padding: 0px 20px;
+    /* transition: 500ms ease-in; */
+}
+
+label {
+    display: block;
+    color: #4e4d4d;
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+
+.form_inputs input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 14px;
+    background-color: #f5f5f6;
+    border: 1px solid #f5f5f6;
+    outline: none;
+    color: #818b92;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 350ms ease-in;
+}
+
+.form_inputs input:focus {
+    outline: 1px solid #c60f13;
+    transition-delay: 250ms;
+}
+
+.radio_details_left,
+.radio_details_right {
+    text-align: center;
+}
+
+
+/* .radio_label {
+    display: inline-block;
+}
+
+.radio_input_value {
+    height: 20px !important;
+    outline: none!important;
+} */
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    /* padding: 6px;*/
+    /*remove padding to hide the radio select area*/
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 4px solid #e6e6e6;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    outline: none!important;
+}
+
+
+/* appearance for checked radiobutton */
+
+input[type="radio"]:checked {
+    background-color: #e6e6e6;
+    padding: 4px;
+    /*apply padding to show the radio selected option*/
+}
+
+#food,
+#dessert {
+    width: 100%;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 1px solid #d1cfcf;
+    font-family: "Roboto Slab", serif;
+}
+
+option {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+}
+
+.submit {
+    border: none;
+    font-size: 16px;
+}
+
+.submit_form {
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+.contact {
+    text-align: center;
+    padding: 10px 0px;
+    color: #838383;
+}
+
+.contact_link {
+    color: #de675f;
+}
+
+
+/* form css end */
+
+
+/* map css start */
+
+
+/* footer css start */
+
+.footer {
+    padding: 32px;
+}
+
+.footer_wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.first_p {
+    width: 50%;
+    color: #818181;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.second_p {
+    text-align: end;
+}
+
+.first_p a {
+    color: #de675f;
+}

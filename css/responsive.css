@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Responsive styles nav */
+@media (max-width: 768px) {
+    .side_nav {
+        width: 100px;
+    }
+
+    .logo_heading {
+        font-size: 18px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .side_nav.active .nav-menu {
+        display: block;
+    }
+
+    .side_nav_container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .side_nav {
+        width: 80px;
+    }
+
+    .logo_heading {
+        font-size: 16px;
+    }
+
+    .side_nav_container {
+        padding: 8px;
+    }
+
+    .nav-item a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .carousel_wrapper {
+        display: none; /* Hide carousel on very small screens */
+    }
+}

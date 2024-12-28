@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="side_nav">
+                <div class="side_nav_wrapper">
+                    <div class="side_nav_container">
+                        <div class="logo">
+                            <a href="">
+                                <h1 class="logo_heading">K + K</h1>
+                            </a>
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a href="#">Our story </a></li>
+                                <li class="nav-item"><a href="#">Photos</a></li>
+                                <li class="nav-item"><a href="#">Groomsmen</a></li>
+                                <li class="nav-item"><a href="#">Bridesmaid</a></li>
+                                <li class="nav-item"><a href="#">gifts</a></li>
+                                <li class="nav-item"><a href="#">RSVP</a></li>
+                            </ul>
+                            <span class="ribbon"></span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="craousel_wrapper">
+                        <div class="back_stretch active" onclick="carousel()">
+                            <img src="images/side-nav.jpg" alt="" class="side_nav_background ">
+                        </div>
+                        <div class="back_stretch ">
+                            <img src="images/side-nav2.jpg" alt="" class="side_nav_background ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header">
+                    <h2 class="couple_name">
+                        <span>Khushi</span>
+                        <em>and</em>
+                        <span>Kshitij</span>
+                        <!-- <span class="herat_border"><i class="fa-solid fa-heart"></i></span>
+                        <span class="herat_border second_heart"><i class="fa-solid fa-heart"></i></span> -->
+
+                    </h2>
+                    <p class="invitation">Invite You to Celebrate At their Wedding</p>
+                    <div class="main_img">
+                        <img src="images/hero.jpg" alt="">
+                    </div>
+                </div>
+                <div class="date_section">
+                    <div class="date">
+                        <div class="date_content">
+                            <span class="day">Thursday, September 15</span>
+                            <span class="year">2024</span>
+
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="date_content time_content">
+                            <span>Five O’Clock in the evening</span>
+                            <span class="venue">Sheraton Towers</span>
+                            <span>123 Las Ramblas, Barcelona</span>
+                            <span class="dinner"><em class="dinner_italic">dinner + dancing to follow</em></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_form">
+                    <a href="#" class="form_link"><i class="fa-solid fa-envelope"></i> click here to rspv today</a>
+                </div>
+                <div class="section_2">
+                    <div class="our_story">
+                        <h2 class="our_story_content">
+                            <span>Our</span>
+                            <!-- <em>and</em> -->
+                            <span>story</span>
+                            <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                            <span class="herat_border story_heart our_story_heart"><i
+                                    class="fa-solid fa-heart"></i></span>
+                        </h2>
+                    </div>
+                    <div class="couple_story">
+                        <div class="bride">
+                            <div class="bride_img">
+                                <img src="images/bride.jpg" alt="">
+                            </div>
+                            <div>
+                                <blockquote class="caption_1">
+                                    <p class="description">When I hear the buzz of the little world among the stalks,
+                                        and grow familiar with the countless indescribable forms of the insects and
+                                        flies, then I feel the presence of the Almighty, who formed us in his own image,
+                                        and the breath.</p>
+                                    <p class="description">I throw myself down among the tall grass by the trickling
+                                        stream; and, as I lie close to the earth, a thousand unknown plants are noticed
+                                        by me: </p>
+                                    <strong>- Khushi's Story</strong>
+                                </blockquote>
+                            </div>
+
+                        </div>
+                        <div class="groom">
+                            <div class="bride_img groom_img">
+                                <img src="images/groom.jpg" alt="">
+
+                            </div>
+                            <div>
+                                <blockquote class="caption_1 caption_2">
+                                    <p class="description">A wonderful serenity has taken possession of my entire soul,
+                                        like these sweet mornings of spring which I enjoy with my whole heart. </p>
+                                    <p class="description">I am alone, and feel the charm of existence in this spot,
+                                        which was created for the bliss of souls like mine. I am so happy, my dear
+                                        friend, so absorbed in the exquisite sense of mere tranquil existence, that I
+                                        neglect
+                                        my talents. </p>
+                                    <strong>Kshitij's Story</strong>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" section_2 section_3">
+                    <div class="our_story photos">
+                        <h2 class="our_story_content photos_content_title">
+                            <span>Photos</span>
+                            <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                            <span class="herat_border story_heart our_story_heart"><i
+                                    class="fa-solid fa-heart"></i></span>
+                        </h2>
+                    </div>
+                    <div class="gallary_wrapper">
+                        <div class="gallery">
+                            <div class="grid">
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1" onclick="openx(0)">
+                                        <img src="images/gallery/ring.jpg" alt="">
+                                        <!-- <span class="glry_img_title">Ring</span> -->
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link2" onclick="openx(1)">
+                                        <img src="images/gallery/dress.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link3" onclick="openx(2)">
+                                        <img src="images/gallery/photo-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link4" onclick="openx(3)">
+                                        <img src="images/gallery/reciption.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link5" onclick="openx(4)">
+                                        <img src="images/gallery/cake.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link6" onclick="openx(5)">
+                                        <img src="images/gallery/bouqute.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link7" onclick="openx(6)">
+                                        <img src="images/gallery/beach_kiss.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_img">
+                                    <a href="#" class="gallery_link1 gallery_link8" onclick="openx(7)">
+                                        <img src="images/gallery/photo-8.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery_carousel">
+                            <div class="carousel_grid">
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1">
+                                        <img src="images/gallery/ring.jpg" alt="" class="active">
+                                        <!-- <span class="glry_img_title">Ring</span> -->
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link2">
+                                        <img src="images/gallery/dress.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link3">
+                                        <img src="images/gallery/photo-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link4">
+                                        <img src="images/gallery/reciption.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link5">
+                                        <img src="images/gallery/cake.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link6">
+                                        <img src="images/gallery/bouqute.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link7">
+                                        <img src="images/gallery/beach_kiss.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="gallery_slider">
+                                    <a href="#" class="gallery_link1 gallery_link8">
+                                        <img src="images/gallery/photo-8.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <button type="button" class="slider_btn_left" onclick="slideLeft()"><i
+                                    class="fa-solid fa-caret-left"></i></button>
+                            <button type="button" class="slider_btn_right" onclick="slideRight()"><i
+                                    class="fa-solid fa-caret-right"></i></button>
+                            <button type="button" class="slider_btn_left close_btn"><i class="fa-solid fa-xmark"
+                                    onclick="closeLB()"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section_2 section_4">
+                    <div class="our_story groomsmen">
+                        <h2 class="our_story_content groomsmen_content_title">
+                            <span>Groomsmen</span>
+                            <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                            <span class="herat_border story_heart our_story_heart"><i
+                                    class="fa-solid fa-heart"></i></span>
+                        </h2>
+                    </div>
+                    <div class="slider_wrapper">
+                        <div class="container">
+                            <div class="slider">
+                                <div class="slider_img">
+                                    <img src="images/Slider/groomsmen-1.jpg" alt="">
+                                    <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate
+                                        alias repudiandae soluta maxime nostrum eos similique, necessitatibus itaque
+                                        expedita?
+                                        Reprehenderit, vero?
+                                    </p>
+                                </div>
+                                <div class="slider_img">
+                                    <img src="images/Slider/groomsmen-2.jpg" alt="">
+                                    <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate
+                                        alias repudiandae soluta maxime nostrum eos similique, necessitatibus itaque
+                                        expedita?
+                                        Reprehenderit, vero?
+                                    </p>
+                                </div>
+                                <div class="slider_img">
+                                    <img src="images/Slider/groomsmen-3.jpg" alt="">
+                                    <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate
+                                        alias repudiandae soluta maxime nostrum eos similique, necessitatibus itaque
+                                        expedita?
+                                        Reprehenderit, vero?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="slider_btn_left" onclick="left()"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="slider_btn_right" onclick="right()"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="section_2 section_5">
+                    <div class="our_story bridesmaid">
+                        <h2 class="our_story_content bridesmaid_content_title">
+                            <span>Bridesmaid</span>
+                            <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                            <span class="herat_border story_heart our_story_heart"><i
+                                    class="fa-solid fa-heart"></i></span>
+                        </h2>
+                    </div>
+                    <div class="slider_wrapper">
+                        <div class="slider b_slider">
+                            <div class="slider_img  b_slider_img">
+                                <img src="images/Slider/bridesmaid-1.jpg" alt="">
+                                <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate alias
+                                    repudiandae soluta maxime nostrum eos similique, necessitatibus itaque expedita?
+                                    Reprehenderit,
+                                    vero?
+                                </p>
+                            </div>
+                            <div class="slider_img  b_slider_img">
+                                <img src="images/Slider/bridesmaid-2.jpg" alt="">
+                                <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate alias
+                                    repudiandae soluta maxime nostrum eos similique, necessitatibus itaque expedita?
+                                    Reprehenderit,
+                                    vero?
+                                </p>
+                            </div>
+                            <div class="slider_img b_slider_img">
+                                <img src="images/Slider/bridesmaid-3.jpg" alt="">
+                                <p class="slider_img_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nihil fuga magni soluta doloribus rem, nesciunt culpa quae. Voluptate alias
+                                    repudiandae soluta maxime nostrum eos similique, necessitatibus itaque expedita?
+                                    Reprehenderit,
+                                    vero?
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="slider_btn_left" onclick="bLeft()"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="slider_btn_right" onclick="bRight()"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+
+                    </div>
+                </div>
+                <div class="section_2 section_6">
+                    <div class="our_story gift">
+                        <h2 class="our_story_content gift_content_title">
+                            <span>gifts</span>
+                            <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                            <span class="herat_border gift_heart our_story_heart"><i
+                                    class="fa-solid fa-heart"></i></span>
+                        </h2>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_wrapper">
+                            <div class="gift_content">
+                                <div class="gift_content_img">
+                                    <a href="" class="gift_img_link">
+                                        <img src="images/logo/logo-1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="gift_content">
+                                <div class="gift_content_img">
+                                    <a href="" class="gift_img_link">
+                                        <img src="images/logo/logo-2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="gift_content">
+                                <div class="gift_content_img">
+                                    <a href="" class="gift_img_link">
+                                        <img src="images/logo/logo-3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="gift_content">
+                                <div class="gift_content_img">
+                                    <a href="" class="gift_img_link">
+                                        <img src="images/logo/logo-4.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="gift_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis numquam
+                                necessitatibus id placeat praesentium hic repudiandae, ipsum, animi consequuntur
+                                mollitia rem autem at voluptatibus dignissimos vitae dolorem veniam temporibus
+                                consequatur, iste nisi nihil nam fugit? Deleniti ducimus ex, exercitationem a nulla non
+                                iusto suscipit impedit cum. Harum, corrupti? Provident, animi.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="section_2 section_7">
+                    <div class="rsvp">
+                        <div class="our_story gift">
+                            <h2 class="our_story_content gift_content_title">
+                                <span>rsvp</span>
+                                <span class="herat_border our_story_heart"><i class="fa-solid fa-heart"></i></span>
+                                <span class="herat_border rsvp_heart our_story_heart"><i
+                                        class="fa-solid fa-heart"></i></span>
+                            </h2>
+                        </div>
+                        <div class="rsvp_form">
+                            <div class="rsvp_content">
+                                <form class="form_rsvp_start" id="myForm">
+                                    <fieldset class="fieldset">
+                                        <legend>Kindly respond by <strong>March 14, 2014.</strong> We look forward to
+                                            celebrating with you! </legend>
+                                        <div class="form_wrapper_details">
+                                            <div class="form_input_wrapper">
+                                                <div class="form_inputs">
+                                                    <div class="input_details_left">
+                                                        <label for="first_name">First Name</label>
+                                                        <input type="text" name="fname" id="first_name"
+                                                            placeholder="Enter Your First Name" required
+                                                            onchange="validateFname()">
+                                                        <span class="error" id="fName"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_inputs">
+                                                    <div class="input_details_right">
+                                                        <label for="last_name">Last Name</label>
+                                                        <input type="text" name="lname" id="last_name"
+                                                            placeholder="Enter your last Name" required
+                                                            onchange="validateLname()">
+                                                        <span class="error" id="lName"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_input_wrapper">
+                                                <div class="form_inputs">
+                                                    <div class="input_details_left">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" id="email"
+                                                            placeholder="Enter Your Email address" required
+                                                            onchange="validateEmail()">
+                                                        <span class="error" id="errEmail"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_inputs">
+                                                    <div class="input_details_right">
+                                                        <label for="phone">Phone</label>
+                                                        <input type="tel" name="phone" id="phone"
+                                                            placeholder="A phone number is optional" required
+                                                            onchange="validatePhone()">
+                                                        <span class="error" id="errPhone"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="fieldset">
+                                        <legend>Will you be attending?</legend>
+                                        <div class="form_wrapper_details radio_details">
+                                            <div class="form_input_wrapper radio_wrapper">
+                                                <div class="form_inputs radio_inputs">
+                                                    <div class="input_details_left radio_details_left">
+                                                        <input type="radio" name="radio" id="radio1"
+                                                            value="Accepts with Pleasure!" class="radio_input_value"
+                                                            onclick="show()">
+                                                        <label for="radio1" class="radio_label">Accepts with
+                                                            Pleasure!</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form_inputs radio_inputs">
+                                                    <div class="input_details_right radio_details_right ">
+                                                        <input type="radio" name="radio" id="radio2"
+                                                            value="Declines with Regret." class="radio_input_value"
+                                                            onclick="hideInput()">
+                                                        <label for="radio2" class="radio_label">Declines with
+                                                            Regret.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="fieldset" id="decline">
+                                        <legend>Please select your meal choices </legend>
+                                        <div class="form_wrapper_details ">
+                                            <div class="form_input_wrapper ">
+                                                <div class="form_inputs form_select">
+                                                    <div class="input_details_left select_left ">
+                                                        <label for="food" class="select_food">Main</label>
+                                                        <select name="select" id="food">
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form_inputs form_select">
+                                                    <div class="input_details_right select_right  ">
+                                                        <label for="dessert" class="select_food">Dessert</label>
+                                                        <select name="select" id="dessert">
+                                                           
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <div class="button_form submit_form">
+                                        <button class="form_link submit" type="submit"><i
+                                                class="fa-solid fa-envelope"></i>
+                                            Send</button>
+                                    </div>
+                                </form>
+
+                                <p class="contact">
+                                    For any questions please email us:
+                                    <a href="#" class="contact_link">comazeem@gmail.com </a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7007.791983461334!2d77.21780714548386!3d28.57288577497841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce25c2bda02bd%3A0x88805483a1dca8bb!2sSouth%20Extension%20I%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1721410675706!5m2!1sen!2sin"
+                        width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="footer">
+                    <div class="footer_wrapper">
+                        <p class="first_p">&copy; 2024 <a href="#">Eternity</a> / Buy it on <a
+                                href="#">WorldEternity</a></p>
+                        <p class="first_p second_p"> <a href="#">Eternity</a> powered by <a href="#">TheWorld.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>

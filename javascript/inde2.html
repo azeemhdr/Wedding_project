@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Form Validation</title>
+	<style>
+		.error {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<form id="myForm">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required onchange="validateName()">
+			<span id="nameError" class="error"></span>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required onchange="validateEmail()">
+			<span id="emailError" class="error"></span>
+		</div>
+		<div>
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" required onchange="validatePhone()">
+			<span id="phoneError" class="error"></span>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+
+	<script>
+		// Get the form and input fields
+		const form = document.getElementById('myForm');
+		const nameField = document.getElementById('name');
+		const emailField = document.getElementById('email');
+		const phoneField = document.getElementById('phone');
+
+		// Get the error message elements
+		const nameError = document.getElementById('nameError');
+		const emailError = document.getElementById('emailError');
+		const phoneError = document.getElementById('phoneError');
+
+		// Function to validate the name field
+		function validateName() {
+			const name = nameField.value.trim();
+			if (name === '') {
+				nameError.textContent = 'Name is required.';
+				return false;
+			} else {
+				nameError.textContent = '';
+				return true;
+			}
+		}
+
+		// Function to validate the email field
+		function validateEmail() {
+			const email = emailField.value.trim();
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(email)) {
+				emailError.textContent = 'Invalid email format.';
+				return false;
+			} else {
+				emailError.textContent = '';
+				return true;
+			}
+		}
+
+		// Function to validate the phone field
+		function validatePhone() {
+			const phone = phoneField.value.trim();
+			const phoneRegex = /^\d{10}$/;
+			if (!phoneRegex.test(phone)) {
+				phoneError.textContent = 'Phone number must be 10 digits.';
+				return false;
+			} else {
+				phoneError.textContent = '';
+				return true;
+			}
+		}
+
+		// Add event listeners for real-time validation
+		// nameField.addEventListener('input', validateName);
+		// emailField.addEventListener('input', validateEmail);
+		// phoneField.addEventListener('input', validatePhone);
+
+		// Add event listener to the form for form submission
+		form.addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			// Validate all fields
+			const isNameValid = validateName();
+			const isEmailValid = validateEmail();
+			const isPhoneValid = validatePhone();
+
+			// If all fields are valid, submit the form
+			if (isNameValid && isEmailValid && isPhoneValid) {
+				alert('Form submitted successfully!');
+				form.reset();
+			}
+		});
+	</script>
+</body>
+
+</html>
